@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 let day = new Schema(
     {
-        weigth: {
+        weight: {
             type: Number
         },
         caloricIntake: {
