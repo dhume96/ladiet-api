@@ -5,11 +5,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+var cors = require('cors')
 
 var indexRouter = require('./routes/index');
 var daysRouter = require('./routes/days');
 
 var app = express();
+app.use(cors());
 
 var uri = "mongodb://localhost:27017/ladiet";
 
